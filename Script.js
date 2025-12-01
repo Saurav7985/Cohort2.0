@@ -8,7 +8,7 @@ let h = document.querySelector('h1')
  let btn = document.querySelector('button')
 
  btn.addEventListener("click",()=>{
-    
+
     h.innerHTML = "You are gay!";
     h.style.fontSize = "80px";
     h.style.color = "red"
@@ -16,3 +16,5 @@ let h = document.querySelector('h1')
     btn.style.backgroundColor = "white"
 
  })
+
+ // new onegit 
