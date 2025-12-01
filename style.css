@@ -13,13 +13,14 @@ color: white;
 }
 
 h1{
+    padding: 20px;
     font-size: 60px;
 }
 
 button{
     margin: 20px;
     padding: 10px 30px;
-    color: brown;
-    background-color: chartreuse;
+    color: WHITE;
+    background-color:  crimson;
 
 }

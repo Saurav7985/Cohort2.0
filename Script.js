@@ -5,16 +5,16 @@
 // Event Listner
 
 let h = document.querySelector('h1')
- let btn = document.querySelector('button')
+let inc = document.querySelector('#inc')
+let dec = document.querySelector('#dec')
+ 
+let a = 0;
+inc.addEventListener("click",function(){
+a++;
+h.innerHTML = a;
+})
 
- btn.addEventListener("click",()=>{
-
-    h.innerHTML = "You are gay!";
-    h.style.fontSize = "80px";
-    h.style.color = "red"
-    
-    btn.style.backgroundColor = "white"
-
- })
-
- // new onegit 
+dec.addEventListener("click",function(){
+a--;
+h.innerHTML = a;
+})
