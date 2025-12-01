@@ -18,3 +18,5 @@ dec.addEventListener("click",function(){
 a--;
 h.innerHTML = a;
 })
+
+// new line
