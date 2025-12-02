@@ -1,22 +1,11 @@
-// 4 pillor od DOM -  Document Object Model
-// Selector
-// Change html
-// Change CSS
-// Event Listner
+let box = document.querySelector('.box')
+let button = document.querySelector('button')
 
-let h = document.querySelector('h1')
-let inc = document.querySelector('#inc')
-let dec = document.querySelector('#dec')
- 
-let a = 0;
-inc.addEventListener("click",function(){
-a++;
-h.innerHTML = a;
+button.addEventListener("click",function(){
+    let c1 = Math.floor((Math.random()*225)+1)
+    let c2 = Math.floor((Math.random()*225)+1)
+    let c3 = Math.floor((Math.random()*225)+1)
+
+    console.log("changed")
+    box.style.backgroundColor = `rgb(${c1},${c2},${c3})`;
 })
-
-dec.addEventListener("click",function(){
-a--;
-h.innerHTML = a;
-})
-
-// new line
