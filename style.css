@@ -14,19 +14,19 @@ color: white;
 }
 
 .main{
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.box{
-    height: 400px;
-    width: 400px;
-    background-color: crimson;
-    border-radius: 20px;
-    margin: 50px;
-    border: 5px solid white;
+h1{
+     background-color: crimson;
+     padding: 80px 130px;
+     border-radius: 20px;
+     border: 2px solid whitesmoke;
 }
 
 button{
@@ -35,6 +35,8 @@ button{
     color: WHITE;
     background-color:  rgb(232, 31, 71);
     font-weight: 900;
+    border-radius: 10px;
+    border:none;
 
 }
 
