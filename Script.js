@@ -1,26 +1,24 @@
 let btn = document.querySelector('button')
-let main = document.querySelector('main')
+let h1 = document.querySelector('.lower h1')
+let inner = document.querySelector('.inner')
 
-let arr = ["Gaurav is Developer","Suryansh is cook","Hemant is bussiness analist","you are coder","stay active","stay motivated"];
+let a = 0;
+btn.addEventListener('click',()=>{
+  
+  btn.style.opacity = 0.5
+  btn.style.pointerEvents = 'none'
 
-btn.addEventListener('click',function(){
-  let index = Math.floor(Math.random()*arr.length)
-  let x = Math.random()*100
-  let y = Math.random()*100
-  let c1 = Math.random()*255
-  let c2 = Math.random()*225
-  let c3 = Math.random()*225
-  let rot = Math.floor(Math.random()*360)
-  let scl = Math.random()*4
+ let inteval =  setInterval(() => {
+    a++
+    btn.style.pos
+    inner.style.width = `${a}%`
+    h1.innerHTML = a+"%";
+  }, 50);
 
-let h3 = document.createElement('h3')
-h3.innerHTML = arr[index];
-h3.style.color = `rgb(${c1},${c2},${c3})`
-h3.style.position = 'absolute'
-h3.style.top = x + "%"
-h3.style.left = y + "%"
-h3.style.rotate = rot + "deg"
-h3.style.scale = scl
+  setTimeout(() => {
+    btn.innerHTML = "Downloded"
+    clearInterval(inteval)
+  }, 5000);
 
-  main.appendChild(h3)
+
 })
