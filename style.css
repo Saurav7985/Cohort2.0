@@ -8,18 +8,27 @@
 
 html,
 body {
-    height: 300%;
+    height: 100%;
     width: 100%;
     background-color: #111;
-    cursor: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-img{
-    height: 40px;
-    width: 40px;
-    position: fixed;
-    transform: translate(-50%,-50%);
+.box{
     background-color: crimson;
-    
+    height: 200px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:60px ;
 }
+
+h3{
+    font-size: 55px;
+    font-weight: 200;
+    padding: 20px;
+}
+
